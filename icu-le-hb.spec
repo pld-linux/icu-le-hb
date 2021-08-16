@@ -12,6 +12,7 @@ Group:		Libraries
 Source0:	http://www.freedesktop.org/software/harfbuzz/release/%{name}-%{version}.tar.gz
 # Source0-md5:	e9b6ad05e19597bb90d1aa087c149b23
 Patch0:		%{name}-link.patch
+Patch1:		icu68.patch
 URL:		http://www.freedesktop.org/wiki/HarfBuzz
 BuildRequires:	autoconf >= 2.56
 BuildRequires:	automake >= 1:1.9
@@ -66,6 +67,7 @@ Statyczna biblioteka icu-le-hb.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
