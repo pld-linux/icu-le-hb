@@ -1,26 +1,26 @@
 #
 # Conditional build:
-%bcond_without	static_libs	# don't build static libraries
+%bcond_without	static_libs	# static library
 #
 Summary:	ICU Layout Engine API on top of HarfBuzz shaping library
 Summary(pl.UTF-8):	API ICU Layout Engine oparte na bibliotece tworzenia kształtów HarfBuzz
 Name:		icu-le-hb
-Version:	1.2.3
-Release:	2
+Version:	2.0.0
+Release:	1
 License:	ICU (MIT-like)
 Group:		Libraries
 Source0:	https://github.com/harfbuzz/icu-le-hb/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	19db9f9baa15a56db6c1ff54ae6da7cd
+# Source0-md5:	e8266e20d122ce872e199f7b7fb4b10b
 URL:		http://www.freedesktop.org/wiki/HarfBuzz
 BuildRequires:	autoconf >= 2.56
 BuildRequires:	autoconf-archive
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	harfbuzz-devel >= 1.2.3
+BuildRequires:	harfbuzz-devel >= 2.0.0
 BuildRequires:	libicu-devel
 BuildRequires:	libstdc++-devel >= 6:4.8.1
 BuildRequires:	libtool >= 2:1.5
 BuildRequires:	pkgconfig
-Requires:	harfbuzz >= 1.2.3
+Requires:	harfbuzz >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,7 +41,7 @@ Summary:	Header files for icu-le-hb library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki icu-le-hb
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	harfbuzz-devel >= 1.2.3
+Requires:	harfbuzz-devel >= 2.0.0
 Requires:	libicu-devel
 Requires:	libstdc++-devel
 
