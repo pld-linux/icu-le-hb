@@ -6,7 +6,7 @@ Summary:	ICU Layout Engine API on top of HarfBuzz shaping library
 Summary(pl.UTF-8):	API ICU Layout Engine oparte na bibliotece tworzenia kształtów HarfBuzz
 Name:		icu-le-hb
 Version:	2.0.0
-Release:	1
+Release:	2
 License:	ICU (MIT-like)
 Group:		Libraries
 Source0:	https://github.com/harfbuzz/icu-le-hb/releases/download/%{version}/%{name}-%{version}.tar.gz
